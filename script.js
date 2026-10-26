@@ -1,23 +1,47 @@
 console.log('Здравствуй мир!');
-let n1 = 10;
-let n2 = 5;
-let result;
-function calculate(operation) {
-    switch(operation) {
-        case '+':
-            result = n1+n2;
-            break;
-        case '-':
-            result = n1 - n2;
-            break;
-        case '*':
-            result = n1 * n2;
-            break;
-        case '/':
-            result = n1 / n2;
-            break;
-        default:
-            result = 0;
-    }
-    console.log(result)
+
+// function calculate(operation) {
+//     let value_one = 10;
+//     let value_two = 7
+//     let result;
+//     switch(operation) {
+//         case '+':
+//             result = value_one + value_two;
+//             break;
+//         case '-':
+//             result = value_one - value_two;
+//             break;
+//         case '*':
+//             result = value_one * value_two;
+//             break;
+//         case '/':
+//             result = value_one / value_two;
+//             break;
+//         default:
+//             result = 0;
+//     }
+//     console.log(result)
+// }
+function plus() {
+    let value_one = 10;
+    let value_two = 7;
+    console.log(value_one+value_two);
+}
+
+function minus() {
+    let value_one = 10;
+    let value_two = 7;
+    console.log(value_one-value_two);
+}
+
+function ymnoshim() {
+    let value_one = 10;
+    let value_two = 7;
+    console.log(value_one*value_two);
+}
+
+function delenie() {
+    let value_one = 10;
+    let value_two = 7;
+    console.log(value_one / value_two);
 }
