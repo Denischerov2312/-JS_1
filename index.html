@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+    #result {
+        width: 200px;
+        height: 20px;
+        border: 1px solid #ccc;
+        margin-top: 10px;
+    }
+    </style>
 </head>
 <body>
     <h1>Калькулятор</h1>
-        <form>
+    <form id="myForm">
         <input type="number" id="num1">
         <input type="number" id="num2">
     </form>
-    <button onclick="calculate('+')">Сложение</button>
-    <button onclick="calculate('-')">Вычитание</button>
-    <button onclick="calculate('*')">Умножение</button>
-    <button onclick="calculate('/')">Деление</button>
+    <button onclick="addition()">Сложение</button>
+    <button onclick="substraction()">Вычитание</button>
+    <button onclick="multiplication()">Умножение</button>
+    <button onclick="division()">Деление</button>
+    <div id="result"></div>
     <script src="script.js"></script>
 </body>
 </html>

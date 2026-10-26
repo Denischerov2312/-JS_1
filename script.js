@@ -22,26 +22,32 @@ console.log('Здравствуй мир!');
 //     }
 //     console.log(result)
 // }
-function plus() {
-    let value_one = 10;
-    let value_two = 7;
-    console.log(value_one+value_two);
+let result = document.getElementById('result');
+
+function addition() {
+    let form = document.getElementById('myForm');
+    let value_one = Number(form.elements[0].value);
+    let value_two = Number(form.elements[1].value);
+    result.textContent = value_one + value_two;
 }
 
-function minus() {
-    let value_one = 10;
-    let value_two = 7;
-    console.log(value_one-value_two);
+function substraction() {
+    let form = document.getElementById('myForm');
+    let value_one = Number(form.elements[0].value);
+    let value_two = Number(form.elements[1].value);
+    result.textContent = value_one - value_two;
 }
 
-function ymnoshim() {
-    let value_one = 10;
-    let value_two = 7;
-    console.log(value_one*value_two);
+function multiplication() {
+    let form = document.getElementById('myForm');
+    let value_one = Number(form.elements[0].value);
+    let value_two = Number(form.elements[1].value);
+    result.textContent = value_one * value_two;
 }
 
-function delenie() {
-    let value_one = 10;
-    let value_two = 7;
-    console.log(value_one / value_two);
+function division() {
+    let form = document.getElementById('myForm');
+    let value_one = Number(form.elements[0].value);
+    let value_two = Number(form.elements[1].value);
+    result.textContent = value_one / value_two;
 }
